@@ -83,7 +83,7 @@ class Parabolic(
         }
 
         val verticalOffset = remember { 2.dp.toPxf(density) }
-        val ballSizePx = remember { com.zar.bottomnavghtioncompose.component.bottomNav.ballSize.toPxf(density) }
+        val ballSizePx = remember { ballSize.toPxf(density) }
 
         return produceState(
             initialValue = BallAnimInfo(),

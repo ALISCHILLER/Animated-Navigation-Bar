@@ -80,7 +80,7 @@ class Height(
         return produceState(
             initialValue = IndentRectShape(
                 indentShapeData = IndentShapeData(
-                    ballOffset = com.zar.bottomnavghtioncompose.component.bottomNav.ballSize.toPxf(density) / 2f,
+                    ballOffset = ballSize.toPxf(density) / 2f,
                     width = indentWidth.toPxf(density),
                 )
             ),
