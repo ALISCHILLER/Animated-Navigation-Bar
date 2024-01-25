@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.component.botttomnava
+package com.zar.bottomnavghtioncompose.component.botttomnava.anim
 
 import android.graphics.Path
 import android.graphics.PathMeasure
@@ -19,8 +19,8 @@ import androidx.compose.ui.geometry.isUnspecified
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.zar.bottomnavghtioncompose.util.toPxf
-
+import com.zar.bottomnavghtioncompose.component.botttomnava.ballSize
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.toPxf
 
 /**
  *Describing parabola ball animation

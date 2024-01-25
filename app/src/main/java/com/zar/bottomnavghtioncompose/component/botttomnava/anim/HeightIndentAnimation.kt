@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.component.botttomnava
+package com.zar.bottomnavghtioncompose.component.botttomnava.anim
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FiniteAnimationSpec
@@ -18,15 +18,18 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.zar.bottomnavghtioncompose.util.lerp
-import com.zar.bottomnavghtioncompose.util.toPxf
+import com.zar.bottomnavghtioncompose.component.botttomnava.ballSize
+import com.zar.bottomnavghtioncompose.component.botttomnava.shape.IndentRectShape
+import com.zar.bottomnavghtioncompose.component.botttomnava.shape.IndentShapeData
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.lerp
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.toPxf
 
 
 @Stable
 class Height(
     private val animationSpec: FiniteAnimationSpec<Float>,
-    private val indentWidth: Dp = 50.dp,
-    private val indentHeight: Dp = 10.dp,
+    private val indentWidth: Dp = 70.dp,
+    private val indentHeight: Dp = 60.dp,
 ) : IndentAnimation {
 
     @Composable

@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.component
+package com.zar.bottomnavghtioncompose.component.test
 
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
@@ -26,7 +26,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.zar.visitzarangar.ui.bottomNav.BottomNavItem
+import com.zar.bottomnavghtioncompose.component.test.BottomNavItem
 
 @Composable
 fun CurvedBottomNavigation(
@@ -81,7 +81,7 @@ fun CurvedBottomNavigation(
 }
 
 
-data class BottomNavItem(val label: String, val icon: ImageVector)
+data class BottomNa(val label: String, val icon: ImageVector)
 @Preview
 @Composable
 fun CurvedBottomNavigationPreview() {

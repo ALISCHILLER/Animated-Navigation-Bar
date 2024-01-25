@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.util
+package com.zar.bottomnavghtioncompose.component.botttomnava.util
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -9,7 +9,7 @@ import androidx.compose.ui.composed
 import androidx.compose.ui.graphics.TransformOrigin
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.IntOffset
-import com.zar.bottomnavghtioncompose.component.botttomnava.BallAnimInfo
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.BallAnimInfo
 
 fun Modifier.noRippleClickable(
     onClick: () -> Unit

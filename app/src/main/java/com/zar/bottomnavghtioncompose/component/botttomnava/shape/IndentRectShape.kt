@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.component.botttomnava
+package com.zar.bottomnavghtioncompose.component.botttomnava.shape
 
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.LayoutDirection
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.ShapeCornerRadius
 
 
 class IndentRectShape(
@@ -58,19 +59,29 @@ fun Path.addRoundRectWithIndent(
                 size.width - indentShapeData.xIndent - indentShapeData.width / 2
             }
 
+//        if (xOffset > cornerRadius.topLeft / 4) {
+//            addPath(
+//                IndentPath(
+//                    Rect(
+//                        Offset(
+//                            x = xOffset,
+//                            y = 0f
+//                        ),
+//                        Size(indentShapeData.width, indentShapeData.height)
+//                    )
+//                ).createPath()
+//            )
+//        }
         if (xOffset > cornerRadius.topLeft / 4) {
-            addPath(
-                IndentPath(
-                    Rect(
-                        Offset(
-                            x = xOffset,
-                            y = 0f
-                        ),
-                        Size(indentShapeData.width, indentShapeData.height)
-                    )
-                ).createPath()
-            )
+            addPath(IndentPath(
+                Rect(
+                    Offset(x = xOffset, y = 0f),
+                    Size(indentShapeData.width, indentShapeData.height)
+                )
+            ).createCircalPath())
         }
+
+
 
         lineTo(width - cornerRadius.topRight, 0f)
         arcTo(

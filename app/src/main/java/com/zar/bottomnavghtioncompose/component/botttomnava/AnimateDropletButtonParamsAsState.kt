@@ -34,8 +34,17 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.zar.bottomnavghtioncompose.util.ballTransform
-import com.zar.bottomnavghtioncompose.util.noRippleClickable
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.BallAnimInfo
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.BallAnimation
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.Height
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.IndentAnimation
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.Parabolic
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.ShapeCornerRadius
+import com.zar.bottomnavghtioncompose.component.botttomnava.anim.shapeCornerRadius
+import com.zar.bottomnavghtioncompose.component.botttomnava.layout.animatedNavBarMeasurePolicy
+import com.zar.bottomnavghtioncompose.ui.theme.barcolor
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.ballTransform
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.noRippleClickable
 
 @Composable
 fun AnimatedNavigationBar(
@@ -90,7 +99,7 @@ fun AnimatedNavigationBar(
                 ballAnimInfo = ballAnimInfoState.value,
                 ballColor = ballColor,
                 sizeDp = ballSize,
-                nav= navigationBarItems.get(selectedIndex)
+                nav = navigationBarItems.get(selectedIndex)
             )
         }
     }
@@ -103,7 +112,7 @@ private fun ColorBall(
     ballColor: Color,
     ballAnimInfo: BallAnimInfo,
     sizeDp: Dp,
-     nav:NavigationBarItems
+    nav:NavigationBarItems
 ) {
     Column(
         modifier = modifier
@@ -112,6 +121,7 @@ private fun ColorBall(
             .clip(shape = CircleShape)
             .background(ballColor),
         verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ){
         Icon(
             modifier = Modifier.size(26.dp),
@@ -137,10 +147,10 @@ fun BottomNavaghtion() {
             .padding(horizontal = 8.dp, vertical = 40.dp)
             .height(85.dp),
         selectedIndex = selectedIndex,
-        cornerRadius = shapeCornerRadius(cornerRadius = 60.dp),
+        cornerRadius = shapeCornerRadius(cornerRadius = 0.dp),
         ballAnimation = Parabolic(tween(300)),
         indentAnimation = Height(tween(300)),
-        barColor = Color.White,
+        barColor = barcolor,
         ballColor = Color.Red,
         navigationBarItems =NavigationBarItems.values()
     ) {

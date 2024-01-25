@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.component.botttomnava
+package com.zar.bottomnavghtioncompose.component.botttomnava.anim
 
 import androidx.compose.runtime.*
 import androidx.compose.ui.geometry.Offset

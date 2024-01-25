@@ -1,4 +1,4 @@
-package com.zar.bottomnavghtioncompose.util
+package com.zar.bottomnavghtioncompose.component.botttomnava.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Stable

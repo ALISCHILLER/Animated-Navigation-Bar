@@ -1,11 +1,11 @@
-package com.zar.bottomnavghtioncompose.component.botttomnava
+package com.zar.bottomnavghtioncompose.component.botttomnava.anim
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
-import com.zar.bottomnavghtioncompose.util.toPxf
+import com.zar.bottomnavghtioncompose.component.botttomnava.util.toPxf
 
 
 /**
