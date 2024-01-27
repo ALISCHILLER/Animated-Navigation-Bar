@@ -78,7 +78,7 @@ fun Path.addRoundRectWithIndent(
                     Offset(x = xOffset, y = 0f),
                     Size(indentShapeData.width, indentShapeData.height)
                 )
-            ).createCircalPath())
+            ).createCircularPath())
         }
 
 
@@ -96,9 +96,7 @@ fun Path.addRoundRectWithIndent(
         lineTo(width, height - cornerRadius.bottomRight)
         arcTo(
             rect = Rect(
-                offset = Offset(
-                    width - cornerRadius.bottomRight,
-                    height - cornerRadius.bottomRight
+                offset = Offset(width - cornerRadius.bottomRight, height - cornerRadius.bottomRight
                 ),
                 size = Size(cornerRadius.bottomRight, cornerRadius.bottomRight)
             ),
